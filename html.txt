@@ -1,0 +1,28 @@
+이지퍼블리싱에서 do it! 실습파일과 pdf전자책 깃에서 받기
+
+vs코드에서 인터넷 실행하는 방법 : alt + L + O
+
+html : 문서 전체를 의미함
+
+헤드에는 일반적인 문서가 들어갈 수 없고 문서의 정보만 들어갈 수 있다.
+주소창이 있는 윗 부분이 head, 본문이 있는 부분이 body.
+
+vs코드에서 쉬프트 + ! 누르고 엔터 누르면 자동완성됨
+lang 부분을 ko로 바꿔줌
+
+<br> : 줄바꿈 코드 // line break
+
+<p> 태그와 <p> 태그 사이에는 간격이 생긴다.
+
+여기서 복사는 alt + shift
+ctrl + alt + shift + 화살표 or alt + 마우스클릭 -> 커서 여러개
+
+<th> : table header (표의 머리)
+
+<rowspan> : 표의 아래칸을 합치는 것
+<colspan> : 표의 오른쪽칸을 합치는 것
+
+<img src="링크" alt="이미지에 대한 설명">
+
+<object width="너비" height="높이" data="파일(pdf같은것)></object>
+

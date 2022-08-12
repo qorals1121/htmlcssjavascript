@@ -1,0 +1,21 @@
+자료형(일반 자료형 - int, double, char, boolean / 참조자료형 - Class)
+
+변수 : 메모리 공간의 값을 바꿀 수 있는 것
+상수 : 메모리 공간의 값을 바꿀 수 없는 것
+
+연산자
+나머지 : 홀짝, 배수
+증감 : 선증가, 후증가
+논리 : &&, ||, !
+조건 : 조건 ? 결과1(true) : 결과2(false)
+
+문자열
+splint : 구분자를 지정하여 문자열을 잘라 배열로 반환
+(last)indexOf : 해당 문자열이 어느 위치에서 시작되는지 인덱스 값 반환
+substring : startIndex 부터 endIndex 전까지 문자열을 잘라 문자열로 반환
+replaceAll : 해당 문자열을 찾아 다른 문자열로 변환
+toLowerCase, toUpperCase : 전부 소문자 또는 대문자로 변환
+trim : 문자열의 양쪽 끝 공백을 제거해준다
+contains : 문자열에 해당 문자열이 포함되어 있는지 true, false 반환
+
+StringBuilder : 문자열 생성
