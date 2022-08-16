@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+input-items {
+    display: flex;
+    align-items: center;
+}
+
+.box-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #dbdbdb;
+
+    width: 300px;
+    height: 300px;
+}
+
+.box1 {
+    border: 1px solid #141414;
+
+    width: 50px;
+    height: 50px;
+
+    background-color: #333fff;
+
+    color: white;
+}
