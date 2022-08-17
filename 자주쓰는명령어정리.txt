@@ -19,3 +19,6 @@ trim : 문자열의 양쪽 끝 공백을 제거해준다
 contains : 문자열에 해당 문자열이 포함되어 있는지 true, false 반환
 
 StringBuilder : 문자열 생성
+
+ctrl+shift+c : 크롬에서 요소선택
+alt+L+O : 크롬으로 띄우기
