@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성</title>
+</head>
+<body>
+    <img src="/17/images/coffee-blue.jpg">
+    <button type="button" class="left-button">&lt;</button>
+    <button type="button" class="right-button">&gt;</button>
+
+    <script>
+        let test;
+        console.log(typeof test);
+        console.log(typeof test);
+
+
+        const coffeeImg = document.querySelector("img");
+        const leftButton = document.querySelector(".left-button");
+        const rightButton = document.querySelector(".right-button");
+
+        const prefix = "/17/images/";
+        const subfix = ".jpg";
+        let coffeeImgs = ["coffee-blue", "coffee-gray", "coffee-pink"];
+        let imgIndex = 0;
+
+        coffeeImg.onclick = () => {
+            alert(`(${event.target.src} 커피 이미지 입니다.`);
+        }
+
+        rightButton.onclick = () => {
+            if(imgIndex < coffeeImgs.length -1) {
+                imgIndex++;
+                coffeeImg.src = prefix + coffeeImgs[imgIndex] + subfix;
+            }else {
+                alert("마지막 사진입니다.");
+            }
+        }
+ 
+        leftButton.onclick = () => {
+            if(imgIndex > 0) {
+                imgIndex--;
+                coffeeImg.src = prefix + coffeeImgs[imgIndex] + subfix;
+            }else {
+                alert("마지막 사진입니다.");
+            }
+        }
+
+        // rightButton.onclick = () => {
+        //     if(coffeeImg.getAttribute("src") == "/17/images/coffee-blue.jpg") {
+        //         coffeeImg.src = "/17/images/coffee-gray.jpg";
+        //     }else if(coffeeImg.getAttribute("src") == "/17/images/coffee-gray.jpg") {
+        //         coffeeImg.src = "/17/images/cooffee-pink.jpg";
+        //     }else {
+        //         alert("마지막 사진입니다.");
+        //     }
+
+        //     coffeeImg.src = "/17/images/coffee-gray.jpg";
+        //     console.log(coffeeImg.getAttribute("src"));
+        //     console.log(coffeeImg.src); /* 이렇게 이미지를 가져올 경우 url도 같이 콘솔창에 찍힌다. */
+        // }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 객체는 중괄호를 열어준다
+        let user = {
+            name: "김준일",
+            email: "skjil1218@kakao.com",
+            username: "junil",
+            password: "1234",
+            showInfo: () => { // 객체 안에 함수 넣는 것도 가능!
+                console.log(`
+                이름 : ${user.name}
+                이메일 : ${user.email}
+                아이디 : ${user.username}
+                비밀번호 : ${user.password}
+                `);
+            }
+        };
+
+        user.showInfo();
+
+        let jsonText = JSON.stringify(user);
+        // JSON의 함수는 두개밖에없는데 stringify는 문자열로 바꿔주는 것이다. 그리고 제이슨은 함수를 담을 수 없다.
+        console.log(jsonText);
+
+        let jsonObj = JSON.parse(jsonText); /* 다시 제이슨을 객체로 바꿔놓음 */
+
+        console.log(jsonObj.username);
+
+    </script>
+</body>
+</html>
